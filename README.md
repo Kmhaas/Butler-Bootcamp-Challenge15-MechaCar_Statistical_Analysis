@@ -22,7 +22,7 @@ address the following questions:
 ## Summary Statistics on Suspension Coils
 * write a short summary using screenshots from your total_summary and lot_summary dataframes 
 
-![deliverable2-lotsum](https://user-images.githubusercontent.com/93004710/162032937-01334fef-1d3e-49fb-9ed3-40de5efa2b8e.png)
+![deliverable2-lotsum](https://user-images.githubusercontent.com/93004710/162035609-1b41286b-539a-4ea1-a131-54d43a8080d4.png)
 
 ![deliverable2-totalsum](https://user-images.githubusercontent.com/93004710/162032959-d13f9899-622e-44a4-b951-22cec3ed40f3.png)
 
