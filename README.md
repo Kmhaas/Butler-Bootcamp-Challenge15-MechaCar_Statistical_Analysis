@@ -39,6 +39,12 @@ address the following question:
 * then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
 
+![deliverable3-ttest](https://user-images.githubusercontent.com/93004710/162037381-0b15fbe3-0497-4885-835e-1701d84622c8.png)
+
+
+![deliverable3-lot1](https://user-images.githubusercontent.com/93004710/162037405-280231e4-74d7-4361-b7ca-5ed6d8daec10.png)
+![deliverable3-lot2](https://user-images.githubusercontent.com/93004710/162037425-15156c3f-8aa2-40c3-84d0-16bad0bad3a4.png)
+![deliverable3-lot3](https://user-images.githubusercontent.com/93004710/162037446-03cc2e36-eafe-487e-8cf3-692d68e4f5fd.png)
 
 
 ## Study Design: MechaCar vs Competition.
