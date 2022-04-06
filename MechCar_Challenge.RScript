@@ -1,0 +1,35 @@
+# import library
+library(tidyverse)
+library(dplyr)
+# import and read MechaCar data
+MechaCar <- read.csv('MechaCar_mpg.csv')
+head(MechaCar)
+#create linear model
+lm(mpg ~ vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD,MechaCar) 
+#summarize linear model
+summary(lm(mpg ~ vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD,MechaCar)) 
+
+
+# import and read Suspenion coil data
+Suspension_COil <- read.csv('Suspension_Coil.csv')
+head(Suspension_COil)
+
+# create total summary
+total_Sum <- summarise(Suspension_COil,Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+total_Sum
+
+# create lot summary
+lot_Sum <- Suspension_COil %>% group_by(Manufacturing_Lot) %>% summarise(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+lot_Sum
+
+
+# create t-test to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch
+t.test(Suspension_COil$PSI,mu=1500)
+
+# create 3 more t-tests to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch
+lot1 <- subset(Suspension_COil,Manufacturing_Lot=="Lot1")
+lot2 <- subset(Suspension_COil,Manufacturing_Lot=="Lot2")
+lot3 <- subset(Suspension_COil,Manufacturing_Lot=="Lot3")
+t.test(lot1$PSI,mu=1500)
+t.test(lot2$PSI,mu=1500)
+t.test(lot3$PSI,mu=1500)
