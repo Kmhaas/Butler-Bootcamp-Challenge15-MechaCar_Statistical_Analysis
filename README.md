@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Linear Regression to Predict MPG
-* write a short summary using a screenshot of the output from the linear regression
+* Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
 
 
 ![deliverable1-lm](https://user-images.githubusercontent.com/93004710/162029548-9743050e-93a8-4062-ab9c-846f18d8f987.png)
@@ -15,12 +15,15 @@
 address the following questions:
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+* Vehicle length and ground clearance are non random amounts of variance. Vehicle weight, spoiler angle and AWD have p-values that indicate random amount variance.
 * Is the slope of the linear model considered to be zero? Why or why not?
+* The p-value is 5.35e-11 which is samaller 0.05 percent so we will reject our null hypothesis.
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+* The model shows the r squared value being 0.7149 resulting in over 70 percent of all mpg of MechaCr prototypes can be predicted in this model.
 
 
 ## Summary Statistics on Suspension Coils
-* write a short summary using screenshots from your total_summary and lot_summary dataframes 
+* Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
 
 ![deliverable2-lotsum](https://user-images.githubusercontent.com/93004710/162035609-1b41286b-539a-4ea1-a131-54d43a8080d4.png)
 
@@ -31,12 +34,12 @@ address the following questions:
 address the following question:
 
 * The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-
+* All manufacturing data does show the PSI is 62.29 PSI which does fall below the 100 PSI variance requierment. When we individually run the tests for the individual lots, Lot 1 and Lot 2 fall below the variance requierment but Lot 3 has a much larger variance.
 
 
 
 ## T-Tests on Suspension Coils
-* then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+* Run t-tests to determine if the manufacturing lots are statistically different from the mean population.
 
 
 ![deliverable3-ttest](https://user-images.githubusercontent.com/93004710/162037381-0b15fbe3-0497-4885-835e-1701d84622c8.png)
